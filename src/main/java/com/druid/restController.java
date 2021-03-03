@@ -32,8 +32,6 @@ public class restController  {
 	private String rootZNode;
 	@Value("${configRootZNode}")
 	private String configRootZNode;
-	@Value("${druidBroker}")
-	private String druidBroker;
 	
     @RequestMapping("/getNodeData")
     public String getNodeData(@RequestParam @NotBlank(message = "Must provide nodeName") String nodeName) {
