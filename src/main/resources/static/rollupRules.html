@@ -1,0 +1,15 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+	<script src="/druid.js"></script>
+    </head>
+    <body>
+	<input type="hidden" id="druidDataSourceRulesJson" value="[]">
+        <select id="druidDataSource" class="form-select" aria-label="Selected Druid Data Source"></select>
+	<button onclick="SaveRule()">Save Rule</button>
+	<button onclick="DeleteRule()">Delete Rule</button>
+	<table id="druidDataSourceRules"></table>
+	<button onclick="AddPosition()">Add Rule</button>
+    </body>
+</html> 
